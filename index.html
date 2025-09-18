@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="assets/fb-share.png">
+  <meta name="author" content="Univesp">
+
+  <meta name="description" property="og:description" content="A análise FOFA é uma ferramenta muito utilizada por empresas de diferentes tamanhos. Ela permite que as organizações tirem proveito de suas forças, por meio das oportunidades existentes no mercado e desenvolvam novas forças e minimizem ou neutralizem as fraquezas e ameaças. No entanto, essa análise também pode ser feita para o contexto pessoal. Para isso, você pode utilizar este recurso.">
+
+  <title>Univesp | Análise FOFA</title>
+
+  <link rel="shortcut icon" href="https://apps.univesp.br/common/favicon.ico" type="image/x-icon" />
+
+  <!-- Arquivos Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <!-- Ícones por Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Ícones por Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Tipografia institucional por Google Fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700|Open+Sans:400,400i,700,700i" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,700|Open+Sans:400,700" rel="stylesheet">
+
+  <!-- Compartilhamento por jsSocials -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://apps.univesp.br/common/rea-geral-2.1.css">
+  <!-- <link rel="stylesheet" href="../common/rea-geral-2.1.css">   -->
+  <link rel="stylesheet" href="stylesheets/nav_footer.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+
+  <!-- Custom JS -->
+  <script type="text/javascript" src="javascripts/events.js"></script>
+
+</head>
+
+<body class="d-flex flex-column">
+
+  <!-- Menu -->
+  <!--///////////////////////////////////////////////////////////////
+  Classe para nav
+  - padrão => header estático
+  - class="header-dinamico" => header possui posição fixa e é mostrado apenas quando a página está no topo (necessário ajustar padding ou margin superior e inferior do main).
+  //////////////////////////////////////////////////////////////////-->
+  <!-- <nav class="header-dinamico"> -->
+  <nav class="d-print-none">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a class="pularNavegacao" href="#conteudoPrincipal">Pular para Conteúdo Principal</a>
+        <a href="https://univesp.br/" target="_blank">
+          <img src="https://apps.univesp.br/common/traco-negativa.svg" alt="Link para site institucional. Logotipo da universidade formado pela palavra Univesp, sendo a letra V estilizada.">
+          <!-- outras opções de img src: colorida-negativa.svg, traco-positiva.svg, traco-negativa.svg -->
+        </a>
+      </div>
+      <!-- Compartilhamento -->
+      <ul class="nav justify-content-end">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons" aria-label="Opções de Compartilhamento">share</i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="sharing"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid titulo">
+    <div class="container">
+      <h1>Análise <b>FOFA</b></h1>
+    </div>
+  </div>
+
+  <!-- Conteúdo -->
+  <main id="conteudoPrincipal">
+
+    <!-- Ilustra p/ telas pequenas -->
+    <div id="imagemmobile" class="imagem-mobile">
+      <img src="assets/ilustra.png" />
+      <img src="assets/ilustra_mobile.png" />
+    </div>
+
+    <div class="container conteudo">
+
+      <!-- Primeira tela -->
+      <div id="text-container">
+        <div class="imagem">
+          <img src="assets/ilustra.png" />
+        </div>
+        <div class="texto">
+          <p>
+            Uma organização não existe sozinha: ela afeta e é afetada pelo ambiente externo. Por isso, ao formular o planejamento estratégico, é fundamental olhar para o ambiente e relacioná-lo com a organização.
+          </p>
+          <p>
+            Para isso a análise <b>FOFA</b> é uma ferramenta muito utilizada por organizações de todos os tamanhos.
+          </p>
+          <p>
+            FOFA é uma sigla que significa: Forças, Oportunidades, Fraquezas e Ameaças. Sendo que as forças e fraquezas relacionam-se ao ambiente interno da organização. Por outro lado, as oportunidades e ameaças relacionam-se ao ambiente externo.
+          </p>
+          <p>
+            Os desafios para a organização a partir da análise FOFA são: <strong>tirar proveito de suas forças</strong>, por meio das oportunidades existentes no mercado, desenvolver novas forças e <strong>minimizar ou neutralizar</strong> as
+            fraquezas e ameaças.
+          </p>
+          <div class="rea-btn startbtn" onclick="display101()">Montar matriz FOFA</div>
+        </div>
+      </div>
+
+      <!-- Segunda tela -->
+      <div id="table-container">
+
+        <!-- Ambiente externo -->
+        <div class="linha">
+          <!-- Ambiente -->
+          <div class="ambiente">
+            <h2>
+              Ambiente Interno
+            </h2>
+          </div>
+          <!-- Forças -->
+          <div class="box-item positive">
+            <div class="boxitem-left left-positive">
+              F
+            </div>
+            <div class="boxitem-right" onclick="display201()">
+              <h3>Forças</h3>
+              <div class="placeholder" id="item1">
+                <p class="detail">São os pontos fortes da organização.</p>
+                <p class="typing-link">Clique para preencher</p>
+              </div>
+              <div class="preenchivel" id="ta1" contentEditable="true"></div>
+            </div>
+          </div>
+          <!-- Fraquezas -->
+          <div class="box-item negative">
+            <div class="boxitem-left left-negative">
+              F
+            </div>
+            <div class="boxitem-right" onclick="display202()">
+              <h3>Fraquezas</h3>
+              <div class="placeholder" id="item2">
+                <p class="detail">São os pontos fracos, aquilo em que a organização não é tão
+                  boa como a concorrência, ou pode melhorar.</p>
+                <p class="typing-link">Clique para preencher</p>
+              </div>
+              <div class="preenchivel" id="ta2" contentEditable="true"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Ambiente externo -->
+        <div class="linha">
+          <!-- Ambiente -->
+          <div class="ambiente">
+            <h2>
+              Ambiente Externo
+            </h2>
+          </div>
+          <!-- Oportunidades -->
+          <div class="box-item positive">
+            <div class="boxitem-left left-positive">
+              O
+            </div>
+            <div class="boxitem-right" onclick="display203()">
+              <h3>Oportunidades</h3>
+              <div class="placeholder" id="item3">
+                <p class="detail">Oportunidades que existem no ambiente externo e podem ser
+                  aproveitadas.</p>
+                <p class="typing-link">Clique para preencher</p>
+              </div>
+              <div class="preenchivel" id="ta3" contentEditable="true"></div>
+            </div>
+          </div>
+          <!-- Ameaças -->
+          <div class="box-item negative">
+            <div class="boxitem-left left-negative">
+              A
+            </div>
+            <div class="boxitem-right" onclick="display204()">
+              <h3>Ameaças</h3>
+              <div class="placeholder" id="item4">
+                <p class="detail">Fatores que colocam o negócio em risco.</p>
+                <p class="typing-link">Clique para preencher</p>
+              </div>
+              <div class="preenchivel" id="ta4" contentEditable="true"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Botão impressão -->
+        <div class="rea-btn printbtn d-print-none" id="printbtn2" onclick="callPrinter()">
+          Imprimir
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <!--//////////////////////////////////////////////////////
+  Classes prontas p/ footer (podem ser combinadas):
+  padrão => texto e contornos em cinza
+  class = "black" => texto e contornos em preto
+  class = "negativo" => texto e contornos em branco, sobre fundo escuro
+  class = "transparente" => fundo transparente (necessário ajustar cor dos ícones de compartilhamento nos círculos, para bater com a cor de fundo)
+  /////////////////////////////////////////////////////////-->
+  <!-- <footer class="black"> -->
+  <!-- <footer class="negativo"> -->
+  <!-- <footer class="transparente"> -->
+  <!-- <footer class="transparente black"> -->
+  <!-- <footer class="transparente negativo"> -->
+  <footer class="d-print-none">
+    <div class="container d-flex justify-content-between">
+
+      <div class="cred-rea">
+        <!-- Comente em caso de adaptação do REA -->
+        <div>Recurso Educacional Aberto (REA) desenvolvido pela <a href="https://univesp.br/" target="blank">Univesp</a>, disponível sob licença <a href="http://apps.univesp.br/common/license_MIT_2020.txt" target="_blank">MIT</a>.
+          Você pode utilizá-lo, compartilhá-lo e modificá-lo.</div>
+        <div><button class="btn btn-link" data-toggle="modal" data-target="#creditos">Créditos</button></div>
+        <!-- <div><a href="#" target="_blank" aria-label="GitHub" style="white-space:nowrap;">GitHub <i class="fab fa-github"></i></a></div> -->
+        <div>Compartilhe: <div class="sharing"></div>
+        </div>
+
+        <!-- Descomente em caso de adaptação do REA -->
+        <!-- <p>
+          <span>Recurso Educacional Aberto (REA) adaptado por SEU NOME.</span>
+          <span><a href="#">Versão original da Univesp</a></span>
+        </p> -->
+      </div>
+
+      <!-- FORMULÁRIOS DE AVALIAÇÃO -->
+      <div class="aval-rea d-flex">
+        <!-- AVALIAR RECURSO -->
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <a class="btn btn-secondary" href="https://forms.office.com/r/3C2Ruy7ekx" target="_blank">Avaliar este recurso</a>
+        <!-- REPORTAR ERRO -->
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <a class="btn btn-secondary" href="https://forms.office.com/r/BU3heRJ9ZP" target="_blank">Reportar erro</a>
+      </div>
+
+    </div>
+  </footer>
+  <!-- Fim do rodapé -->
+
+  <!-- CRÉDITOS -->
+  <div class="modal fade" id="creditos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <h6>Governo do Estado de São Paulo</h6>
+          <p>Secretaria de Desenvolvimento Econômico</p>
+
+          <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO – UNIVESP</h6>
+          <p><span class="funcao">Presidente</span>Rodolfo Jardim de Azevedo</p>
+          <p><span class="funcao">Diretora Acadêmica</span>Simone Telles Martins Ramos</p>
+
+          <h6>Equipe</h6>
+          <p><span class="funcao">Coordenação</span>Édison Trombeta</p>
+          <p><span class="funcao">Roteirização e Design Instrucional</span>Andressa Rubim</p>
+          <p><span class="funcao">Layout</span>William Kimura</p>
+          <p><span class="funcao">Programação</span>Ariel Damatto e William Kimura</p>
+
+        </div>
+        <div class="modal-footer">
+          <p>Janeiro/2020</p>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arquivos Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://apps.univesp.br/common/jquery-ui-touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <!-- jsSocials -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+  <script>
+    var share = $(".sharing");
+    var page_title = $(document).attr('title');
+    var page_url = window.location.href;
+    share.jsSocials({
+      shares: [{
+          share: "facebook",
+          logo: "fab fa-facebook-f",
+        },
+        {
+          share: "twitter",
+          logo: "fab fa-twitter",
+        },
+        {
+          share: "whatsapp",
+          logo: "fab fa-whatsapp",
+        },
+      ],
+      url: page_url,
+      text: 'Confira o REA ' + page_title + '.',
+      showLabel: false,
+      showCount: false,
+      shareIn: "popup",
+    });
+  </script>
+
+  <!-- Analytics. Remova em caso de reutilização do REA -->
+  <script src="https://apps.univesp.br/common/analytics.js"></script>
+
+</body>
+
+</html>
